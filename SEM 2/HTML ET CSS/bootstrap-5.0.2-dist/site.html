@@ -1,0 +1,198 @@
+<html>
+<head>
+<title> les conteneurs bootstrap
+</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+</head>
+<body>
+<h1>les differents conteneurs </h1>
+<div class="container"> un conteneur principal
+</div>
+<div class="container-sm">100% wide until small breakpoint</div>
+<div class="container-md">100% wide until medium breakpoint</div>
+<div class="container-lg">100% wide until large breakpoint</div>
+<div class="container-xl">100% wide until extra large breakpoint</div>
+<div class="container-xxl">100% wide until extra extra large breakpoint</div>
+
+<div class="container-fluid">
+  du contenu fluide..
+</div>
+<h1> Alignement Horizontal des colonnes dans un conteneur</h1>
+
+
+<div class="container" style="background-color:yellow;">
+  <div class="row">
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
+</div>
+<div class="container" style="background-color:pink;">
+  <div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" style="background-color:red;">
+      1 of 3
+    </div>
+    <div class="col" style="background-color:black;">
+      2 of 3
+    </div>
+    <div class="col"style="background-color:maroon;">
+      3 of 3
+    </div>
+  </div>
+</div>
+<h1>colonne avec largeur variable</h1>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-6"style="background-color:yellow;">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-5" style="background-color:blue;">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+des colonnes alignees horizontales
+<div class="container">
+  <div class="row row-cols-3">
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+  </div>
+</div>
+<h1>  Alignement horizontale</h1>
+<div class="container">
+  <div class="row align-items-start" style="background-color:green">
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+  </div>
+  <div class="row align-items-center"style="background-color:gray;height:400px">
+    <div class="col">
+      centre gauche 
+    </div>
+    <div class="col">
+      le centre mileu
+    </div>
+    <div class="col">
+      centre droite
+    </div>
+  </div>
+  <div class="row align-items-end"  style="background-color:green">
+    <div class="col">
+      partie gauche du pied
+    </div>
+    <div class="col">
+      partie milieu
+    </div>
+    <div class="col">
+      partie droite du pied
+    </div>
+  </div>
+</div>
+<h1> Decalage dans l'alignement horizontal</h1>
+<div class="container">
+  <div class="row">
+    <div class="col align-self-start" style="background-color:pink">
+      One of three columns
+    </div>
+    <div class="col align-self-center" style="background-color:lightblue">
+      One of three columns
+    </div>
+    <div class="col align-self-end"style="background-color:green">
+      One of three columns
+    </div>
+  </div>
+</div>
+<h1> les gouttieres
+</h1>
+<div class="container px-4" style="background-color:pink">
+  <div class="row gx-5">
+    <div class="col">
+     <div class="p-3 border bg-light"style="background-color:yellow">
+	 Custom column padding</div>
+    </div>
+    <div class="col">
+      <div class="p-3 border bg-light"style="background-color:yellow">
+	  Custom column padding</div>
+    </div>
+  </div>
+</div>
+<h1> les images </h1>
+<style> img{height:150px;width:150px;}</style>
+<img src="photo.jpg" class="img-fluid" alt="ma fille"><br>
+
+
+
+<h1> les tables </h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+<h1> les figures </h1>
+<figure class="figure">
+  <img src="photo.jpg" class="figure-img img-fluid rounded" alt="mafille">
+  <figcaption class="figure-caption">legende de la figure.</figcaption>
+</figure>
+</body>
+</html>
